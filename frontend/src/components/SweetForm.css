@@ -1,0 +1,60 @@
+.sweet-form-container {
+  margin-bottom: 30px;
+}
+
+.sweet-form-container .card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.file-input:hover {
+  border-color: #667eea;
+}
+
+.image-preview {
+  margin-top: 15px;
+  position: relative;
+}
+
+.image-preview img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remove-image {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-remove-image:hover {
+  background: #c82333;
+}
+

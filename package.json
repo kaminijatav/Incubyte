@@ -1,0 +1,16 @@
+{
+  "name": "sweet-shop-management",
+  "version": "1.0.0",
+  "description": "Full-stack Sweet Shop Management System with TDD",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "test:backend": "cd backend && npm test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["sweet-shop", "tdd", "full-stack"],
+  "author": "",
+  "license": "ISC"
+}
+

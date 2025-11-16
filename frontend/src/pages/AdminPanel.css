@@ -1,0 +1,206 @@
+.admin-panel {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.admin-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.admin-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  color: #667eea;
+  font-size: 2rem;
+}
+
+.admin-header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-welcome {
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.admin-actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-stats {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.admin-sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.admin-sweet-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-sweet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-sweet-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-sweet-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-sweet-info {
+  padding: 20px;
+}
+
+.admin-sweet-info h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.sweet-category {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.admin-sweet-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-sweet-details div {
+  color: #666;
+}
+
+.admin-sweet-details strong {
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.admin-sweet-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+}
+
+.admin-sweet-actions {
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-sweet-actions .btn {
+  width: 100%;
+}
+
+.restock-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.restock-section .quantity-input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.restock-section .btn {
+  flex: 1;
+}
+
+.loading,
+.no-sweets {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .admin-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .admin-actions-bar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .admin-sweets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
